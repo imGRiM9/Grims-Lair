@@ -5,52 +5,183 @@
         <meta name ="viewport" content="width=device-width,initial-scale=1.0"/>
         <title> GR!M's Lair </title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <nav>
             <ul class="navbar">
                 <li class="logo"><a href="#home">GRIM's LAIR</a></li>
-                <li><a href ="#browsegame">Browse Games</a></li>
-                <li><a href ="#gamingnews">Gaming News</a></li>
-                <li><a href ="#Blogs">Blogs</a></li>
-                <li><a href ="#onsale">On sale</a></li>
-                <li><a href ="#login">Login</a></li>
-                <li><a href ="#signup">Signup</a></li>
+                <li class="search">
+                <form class="search-form">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+                </form>
+                </li>
+                <li><a href ="#games">Explore Games</a></li>
+                <li><a href ="#newswire">Newswire</a></li>
+                <li><a href ="#community">Community</a></li>
+                <li><a href ="#store">Store</a></li>
+                <li><a href="#login" class="btn-login"><i class="fas fa-user"></i> Sign In</a></li>
+
             </ul>
         </nav>
 
         <section class="featured">
             <img src="https://images4.alphacoders.com/115/thumb-1920-1151249.jpg" alt="featured"/>
         </section>
-        <section>
+        <section id="games">
+        <h2>Explore Games</h2>
+            <p>Discover new titles, hidden gems, and all your next favorite games in one place.<br>
+                 Start exploring and find your next great play!</p>
             <div class ="game-grid">
                 <div class="game-card">
-                    <img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3846488.jpg&f=1&nofb=1&ipt=43f17900098f6b61be7be89d6740a607db71ce81042f4bb9fc01ff423a6c2d40" alt="Game1"/>
-                     <h3>Red Dead Redemption II</h3>
-                     <p> "A Wild Wild West Story based on Gangs, Bandits, Tragedy, and Living"
-                        Be a part of a outlaws and experience the west like never before.
-                    </p>
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/20173.jpg" alt="Game1"/>
                 </div>
-
                 <div class="game-card">
-                    <img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5746184.jpg&f=1&nofb=1&ipt=000f0f212f478c934a4e261825006a568d37afe624b7a41420ddea3d72aed717" alt="Game2"/>
-                    <h3>Sekiro: Shadows Die Twice</h3>
-                    <p>
-                        "Sekiro is a Lone Wolf, who is bounded by honor and dignity
-                        to fulfill his duties as a sinobi"
-                    </p>
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22472.jpg" alt="Game2"/>
+                     
                 </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21659.jpg" alt="Game3"/> 
+                </div>                
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22311.jpg" alt="Game4"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22467.jpg" alt="Game5"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21671.jpg" alt="Game6"/>
+                </div>    
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/16763.jpg" alt="Game7"/> 
+                </div>                
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21662.jpg" alt="Game8"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21378.jpg" alt="Game9"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21352.jpg" alt="Game10"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/19072.jpg" alt="Game11"/>
+                </div>
+                <div class="game-card">
+                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21475.jpeg" alt="Game12"/>
+                </div>                                                           
             </div>    
         </section>
-        <section id="newsletter" class="newsletter">
-            <h2>Join the GR!M Squad</h2>
-                <p>Subscribe for game updates, news & offers</p>
-            <form id="newsletter-form">
-             <input type="email" id="email" placeholder="Enter your email" required />
-                <button type="submit">Subscribe</button>
-            </form>
-                <p id="thankyou" style="display:none; color:#0f0; margin-top: 10px;">Thanks for subscribing!</p>
+
+        <section id="newswire">
+            <h2>Newswire</h2>
+            <p>Stay up-to-date with the latest gaming news!<br>
+                 From new releases to exclusive updates and industry buzz, Newswire keeps you in the loop on everything gaming.</p>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/19048.jpg" alt="News1" />
+                    <div class="news-text">
+                        <h3>Ghost of Yōtei Gets New Story Info, Commits to 2025 Release Date</h3>
+                        <p>TGhost of Yōtei reveals exciting new story details, promising a deep and immersive narrative set in a hauntingly beautiful world. 
+                            The game also officially confirms its release for 2025, giving fans plenty to look forward to.
+                            </p>
+                    </div>
+                </div>
+               
+                <div class="news-card">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16282.jpg" alt="News2" />
+                    <div class="news-text">
+                        <h3>Cyberpunk 2077 Sequel Cyberpunk 2 Enters Pre-Production</h3>
+                        <p>Several weeks ago the CD Projekt Red team responsible for the next big game set in the Cyberpunk universe completed the project’s conceptual phase," 
+                            CD Projekt said.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/15106.jpg" alt="News3" />
+                    <div class="news-text">
+                        <h3>League of Legends Fans Not Happy About Uzi Kai'Sa Skin Price</h3>
+                        <p>Fans of League of Legends are voicing their discontent about one of the newest World Championship skins coming to the game, 
+                            with the Kai'Sa outfit sporting an exorbitant price point. </p>
+                    </div>
+                </div>
+                <a href="#seemore" class="btn-more">See More</a>
+            </div>
+              
         </section>
+        <section id="community">
+            <h2>Community</h2>
+            <p>Join the heart of our gaming world!<br>
+                Connect with fellow players, share your passion, and dive into discussions, fan creations, and events.<br>
+                Whether you’re here to make new friends or show off your skills, the Community is your place to belong and be heard.</p>
+        </section>
+        
+
+
+        <section id="store">
+            <h2>Store</h2>
+            <p>Gear up, show your fandom, and grab the latest drops right here!</p>
+
+            <div class="store-scroll-wrapper">
+                <div class="store-grid">
+                    <div class="store-card">
+                        <img src="https://www.fangamer.com/cdn/shop/files/product_mondo_SH4_vinyl_main.png?crop=center&height=600&v=1704749949&width=900" alt="item-1" />
+                        <div class="store-details">
+                            <h3>Silent Hill 4:<br> The Room Vinyl Soundtrack</h3>
+                            <p class="price">$39.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <img src="https://www.fangamer.com/cdn/shop/files/product_wayo_bayonetta_vinyl_box_set_main.png?crop=center&height=600&v=1706133870&width=900" alt="item-2" />
+                        <div class="store-details">
+                            <h3>Bayonetta Vinyl<br> Soundtrack Box Set</h3>
+                            <p class="price">$39.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="store-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0014/1962/files/pizza-main-fs8.png?v=1744136029" alt="item-3" />
+                        <div class="store-details">
+                            <h3>Pizza Tower for Nintendo Switch™<br> Collector's Edition</h3>
+                            <p class="price">$79.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <img src="https://www.fangamer.com/cdn/shop/files/product_hades_cthonic_gods_poster_main.png?crop=center&height=600&v=1720541290&width=900" alt="item-4" />
+                        <div class="store-details">
+                            <h3>Chthonic Gods Poster</h3>
+                            <p class="price">$24.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <img src="https://www.fangamer.com/cdn/shop/products/product_HK_mini_figurines_main.png?crop=center&height=600&v=1661370498&width=900" alt="item-5" />
+                        <div class="store-details">
+                            <h3>Hollow Knight Mini Figurines</h3>
+                            <p class="price">$88.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <img src="https://www.fangamer.com/cdn/shop/files/product_StP_nightmares_embrace_longsleeve_main.png?crop=center&height=600&v=1737667131&width=900" alt="item-6" />
+                        <div class="store-details">
+                            <h3>Slay the Princess:<br>Nightmare's Embrace</h3>
+                            <p class="price">$44.99</p>
+                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+            </div>
+        </section>        
     </body>
     <footer class="footer">
         <div class="footer-content">

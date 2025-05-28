@@ -1,15 +1,18 @@
-body{
-    background-color: #131313;
-    margin:auto;
+/* General Page Styling */
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-header{
-    background-color: #ff0000;
-    color: #121212;
-    text-align: center;
-    padding: 50px 10px;
+header {
+  background-color: #dd2424;
+  color: #121212;
+  text-align: center;
+  padding: 50px 10px;
 }
 
+/* Navbar Styles */
 nav {
   position: sticky;
   top: 0;
@@ -18,96 +21,385 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.navbar{
-    list-style: none;
-    margin:0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background-color: #0d0d0d;
-    font-family: sans-serif;
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 12px 20px;
+  margin: 0;
+  background-color: #0d0d0d;
+  flex-wrap: wrap;
 }
 
-.navbar li{
-    margin:0;
+.navbar li {
+  margin: 0 10px;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: #ff0000;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.2s ease;
+.navbar a {
+  text-decoration:none;
+  color: #dd2424;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.navbar a:hover{
-    color: #f8f8f8;
+.navbar a:hover {
+  color: #f8f8f8;
 }
 
-p{
-    color:#f8f8f8;
-    text-align: center;
+/* Logo */
+.logo {
+  margin-right: auto;
+}
 
+.logo a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #dd2424;
+  text-decoration: none;
+}
+
+/* Search Bar */
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-form i {
+  position: absolute;
+  left: 10px;
+  color: #999;
+  pointer-events: none;
+  font-size: 0.9rem;
+}
+
+.search-form input {
+  padding: 6px 10px 6px 30px; /* left padding for icon */
+  border-radius: 20px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.search-form input::placeholder {
+  color: #999;
+}
+
+/* Login Button */
+.btn-login {
+  background-color: #0d0d0d;
+  color: #dd2424 !important;
+  padding: 6px 12px;
+  border: 2px solid #dd2424; /* Ensures visible border */
+  border-radius: 20px;
+  text-decoration: none !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* Space between icon and text */
+}
+.btn-login i {
+  font-size: 1rem;
 }
 
 
-section h3{
-    color: #ff0000;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size:1rem;
+.btn-login:hover {
+  background-color: #dd2424;
+  color: #ffffff !important;
 }
 
+/* Featured Image Section */
 .featured {
   width: 100%;
-  height: 100%;
-  overflow:visible;
-  margin:0;
-  padding: 0;
+  height: auto;
+  overflow: visible;
 }
 
 .featured img {
   width: 100%;
-  height: 100%;
-  object-fit:cover;
+  height: auto;
+  object-fit: contain;  /* ← Shows entire image */
   display: block;
-  padding-top: 20px;
+}
+/*Explore Games Section*/
+
+#games h2 {
+  color: #dd2424;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 6rem;
+  padding-top: 10px;
 }
 
-.game-grid{
-    display:flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding:50px;
+#games p {
+  color: #ccc;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.5;
 }
 
-.game-card{
-    background-color: #191818;
-    border-radius: 10px;
-    padding:15px;
-    width:200px;
-    text-align:center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease;
+/* Game Grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.game-card:hover{
-    transform:scale(1.05);
+.game-card {
+  background-color: #191818;
+  padding: 0;
+  width: 400px;
+  height: 400px; /* set fixed height for the card */
+  border-radius: 5px;
+  overflow: hidden; /* hide overflow so image corners follow rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  position: relative;
 }
 
-.game-card img{
-    width:100%;
-    height:120px;
-    object-fit: cover;
-    border-radius:5px;
-    margin-bottom: 10px;
+.game-card:hover {
+  transform: scale(1.05);
 }
 
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+/*Newswire Section*/
+#newswire{
+  background-color: #000000;
+}
+#newswire h2 {
+  color: #dd2424;
+  font-size: 6rem;
+  margin-bottom: 20px;
+  text-align: center; /* heading stays centered */
+  padding-top: 30px;
+}
+
+#newswire p {
+  color: #f8f8f8;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-align: center; /* intro paragraph centered */
+}
+
+/* News grid now is a flex column */
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: left !important;
+
+}
+.news-card {
+  display: flex;
+  gap: 10px;
+  background-color: #191818;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.news-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;  /* stack heading and paragraph vertically */
+  justify-content: center;
+  text-align: left;
+  color: #dd2424;
+  flex: 1;
+}
+
+.news-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.6rem;
+  color: #dd2424;
+}
+
+.news-text p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left !important;
+}
+
+.btn-more {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 60px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #dd2424;
+  background-color: transparent;
+  border: 2px solid #dd2424;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+  background-color: #dd2424;
+  color: #000000;
+}
+
+/*Community Section*/
+#community h2{
+ color: #dd2424;
+  font-size: 6rem;
+  margin-bottom: 10px;
+  text-align: center; /* heading stays centered */
+}
+
+#community p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-align: center; /* intro paragraph centered */
+}
+/* Store Section Layout */
+#store {
+  padding: 60px 20px;
+  color: #f8f8f8;
+  background-color: #000;
+  text-align: center;
+}
+
+#store h2 {
+  color: #dd2424;
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+#store p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Scrollable Wrapper */
+.store-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+/* Flex container */
+.store-grid {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  width: max-content; /* ensures flex items don't wrap */
+}
+
+/* Card Style */
+.store-card {
+  flex: 0 0 300px;
+  height: 350px;
+  background-color: #191818;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+}
+
+.store-card:hover {
+  transform: translateY(-5px);
+}
+
+.store-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.store-details {
+  text-align: center;
+}
+
+.store-details h3 {
+  color: #ff0000;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.price {
+  color: #00ff99;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-buy {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #cc0000;
+}
+
+.btn-buy i {
+  font-size: 1rem;
+}
+
+/* Hide scrollbar for WebKit */
+.store-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.store-scroll-wrapper {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+/* Footer */
 .footer {
   background-color: #0d0d0d;
-  color: #ccc;
+  color: #f8f8f8;
   padding: 30px 20px;
   text-align: center;
   font-size: 0.9rem;
@@ -115,7 +407,7 @@ section h3{
 }
 
 .footer a {
-  color: #ff0000;
+  color: #dd2424;
   text-decoration: none;
   margin: 0 5px;
 }
